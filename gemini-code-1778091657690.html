@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AERO-INTEL | May 2026 Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #030405; color: #f4f4f5; }
+        .liquid-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .liquid-card:hover { border-color: rgba(59, 130, 246, 0.5); transform: translateY(-4px); }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- NAVIGATION -->
+    <nav class="max-w-7xl mx-auto flex justify-between items-center mb-12 py-4 border-b border-white/10">
+        <div class="text-2xl font-black italic tracking-tighter uppercase">AERO<span class="text-blue-500">2026</span></div>
+        <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-500">
+            <span>Global Intel</span> <span>Fleet Data</span> <span class="text-red-500">Alerts</span>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto space-y-8">
+        
+        <!-- SPIRIT COLLAPSE ALERT -->
+        <section class="relative overflow-hidden rounded-3xl bg-red-600/10 border border-red-500/50 p-8 flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-red-500 text-white text-[10px] font-black rounded-full mb-4">
+                    <span class="animate-ping h-2 w-2 rounded-full bg-white"></span> CRITICAL: OPERATIONS CEASED[cite: 1]
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black italic mb-4 uppercase">Spirit Airlines (1983-2026)</h1>
+                <p class="text-red-100/70 max-w-2xl text-lg font-medium">
+                    As of May 2, 2026, Spirit Airlines has officially grounded its entire fleet[cite: 1]. After failing to secure rescue financing, the airline has filed for Chapter 7 bankruptcy[cite: 1]. All airport counters are unmanned[cite: 1].
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 w-full md:w-auto">
+                <div class="liquid-card p-6 rounded-2xl text-center">
+                    <span class="block text-4xl font-black text-red-500">0</span>
+                    <span class="text-[9px] uppercase tracking-widest font-bold opacity-50">Active Flights[cite: 1]</span>
+                </div>
+                <div class="liquid-card p-6 rounded-2xl text-center">
+                    <span class="block text-4xl font-black text-red-500">EXIT</span>
+                    <span class="text-[9px] uppercase tracking-widest font-bold opacity-50">Chapter 7[cite: 1]</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOEING SECTION -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <section class="md:col-span-8 liquid-card rounded-3xl p-8 space-y-6">
+                <h2 class="text-3xl font-black italic text-blue-400">BOEING GLOBAL</h2>
+                
+                <!-- 737 MAX 10 -->
+                <div class="flex flex-col md:flex-row gap-6 p-4 bg-white/5 rounded-2xl border border-white/10">
+                    <img src="https://images.airlinegeeks.com/wp-content/uploads/2023/11/02001638/GGG_7224-2-Enhanced-NR-scaled.jpg" class="md:w-1/3 rounded-xl object-cover h-32 md:h-auto" alt="Boeing 737 MAX 10">
+                    <div class="md:w-2/3">
+                        <h4 class="font-bold text-xl uppercase italic">737 MAX 10</h4>
+                        <p class="text-sm text-zinc-400 leading-relaxed mb-2">Longest MAX variant clearing final certification hurdles in May 2026[cite: 1]. United is the primary launch customer[cite: 1].</p>
+                        <span class="text-[10px] font-bold text-blue-500 uppercase">Production: 47 per Month[cite: 1]</span>
+                    </div>
+                </div>
+
+                <!-- 787-10 -->
+                <div class="flex flex-col md:flex-row gap-6 p-4 bg-white/5 rounded-2xl border border-white/10">
+                    <img src="https://samchui.com/wp-content/uploads/2019/09/Divulga%C3%A7%C3%A3o-Boeing-787-10-Dreamliner-Air-New-Zealand-190925.jpg" class="md:w-1/3 rounded-xl object-cover h-32 md:h-auto" alt="Boeing 787-10">
+                    <div class="md:w-2/3">
+                        <h4 class="font-bold text-xl uppercase italic">787-10 Dreamliner</h4>
+                        <p class="text-sm text-zinc-400 leading-relaxed mb-2">Certified with higher MTOW, extending range by 400nm to compete with the A350-900[cite: 1].</p>
+                        <span class="text-[10px] font-bold text-blue-500 uppercase">Delta Order: 60 Units[cite: 1]</span>
+                    </div>
+                </div>
+
+                <!-- 777X -->
+                <div class="flex flex-col md:flex-row gap-6 p-4 bg-white/5 rounded-2xl border border-white/10">
+                    <img src="https://www.boeing.com/content/dam/boeing/v2/products/777x/777x-hero-mobile.jpg" class="md:w-1/3 rounded-xl object-cover h-32 md:h-auto" alt="Boeing 777X">
+                    <div class="md:w-2/3">
+                        <h4 class="font-bold text-xl uppercase italic">777X Status</h4>
+                        <p class="text-sm text-zinc-400 leading-relaxed mb-2">777-9 is in the final FAA Type Inspection phase[cite: 1]. Entry into service with Lufthansa/Emirates scheduled for early 2027[cite: 1].</p>
+                        <span class="text-[10px] font-bold text-blue-500 uppercase">Program Cost: $15B[cite: 1]</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AIRBUS SECTION -->
+            <section class="md:col-span-4 bg-zinc-900/50 rounded-3xl p-8 border border-zinc-800 flex flex-col">
+                <h2 class="text-3xl font-black italic mb-6 text-emerald-400 uppercase">Airbus Euro</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/EGLF_-_Airbus_A350-941_-_F-WZNW.jpg" class="rounded-2xl mb-6 grayscale hover:grayscale-0 transition duration-500" alt="Airbus A350">
+                <ul class="space-y-4 text-sm text-zinc-400 flex-1">
+                    <li class="flex items-start gap-3"><span class="h-1.5 w-1.5 bg-emerald-500 rounded-full mt-1.5"></span> A321neo accounts for 70% of current A320neo family backlog[cite: 1].</li>
+                    <li class="flex items-start gap-3"><span class="h-1.5 w-1.5 bg-emerald-500 rounded-full mt-1.5"></span> A350-1000 range certified for 9,000nm for "Project Sunrise"[cite: 1].</li>
+                    <li class="flex items-start gap-3"><span class="h-1.5 w-1.5 bg-emerald-500 rounded-full mt-1.5"></span> A220 production remains steady at Mirabel and Mobile[cite: 1].</li>
+                </ul>
+                <div class="mt-8 p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl text-center">
+                    <span class="text-[10px] block font-black uppercase text-emerald-500">Backlog Total[cite: 1]</span>
+                    <span class="text-3xl font-black italic text-white">8,600+ Units</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- EMBRAER SECTION -->
+        <section class="liquid-card rounded-3xl p-8">
+            <h2 class="text-3xl font-black italic mb-8 text-amber-400 uppercase">Embraer E-Jet E2 Tech</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg" class="rounded-2xl h-40 w-full object-cover" alt="Embraer E2">
+                    <h4 class="font-black italic text-lg uppercase">E195-E2 Efficiency</h4>
+                    <p class="text-xs text-zinc-400">Variant represents 83% of all E2 deliveries, proving worth as a 'Mainline-lite' aircraft[cite: 1].</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="h-40 bg-zinc-800 rounded-2xl flex items-center justify-center border border-white/5">
+                        <span class="text-amber-500 text-4xl font-black">METAL</span>
+                    </div>
+                    <h4 class="font-black italic text-lg uppercase">Material Choice</h4>
+                    <p class="text-xs text-zinc-400">Unlike composite 787s, E2 uses advanced metal alloys for easier maintenance at regional hubs[cite: 1].</p>
+                </div>
+                <div class="space-y-4">
+                    <img src="https://assets.fta.cirium.com/wp-content/uploads/2024/03/21174510/E175.jpg" class="rounded-2xl h-40 w-full object-cover" alt="Embraer E175">
+                    <h4 class="font-black italic text-lg uppercase">E175-E2 Status</h4>
+                    <p class="text-xs text-zinc-400">Program remains paused for US markets as weight exceeds pilot scope clause limits[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="max-w-7xl mx-auto mt-20 py-8 border-t border-white/10 text-[9px] font-black uppercase tracking-[0.5em] text-zinc-600 flex justify-between">
+        <span>May 2026 Intelligence Report[cite: 1]</span>
+        <span>Aero Liquid Design // No Rockets</span>
+    </footer>
+</body>
+</html>
